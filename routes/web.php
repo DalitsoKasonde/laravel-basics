@@ -16,16 +16,16 @@
 //     return '<h1>Hello World</h1>';
 // });
 
-Route::get('/post', 'PagesController@posts')->name('downloadHostDocuments');
 
 
 
-Route::get('/', 'PagesController@index');
-Route::get('/about', 'PagesController@about');
-Route::get('/services', 'PagesController@services');
+Route::get('/', 'PagesController@index')->name('home');
+Route::get('/about', 'PagesController@about')->name('about');
+Route::get('/services', 'PagesController@services')->name('services');
+// Route::resource('/posts', 'PostsController@index')->name('posts');
 
-Route::get('user/profile', 'UserProfileController@show')->name('profile');
+// Route::get('user/profile', 'UserProfileController@show')->name('profile');
 
 
-Route::resource('posts', 'PostsController');
+Route::resource('posts', 'PostsController@index');
 

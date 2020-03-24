@@ -11,10 +11,10 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"> <a href="">Home</a></li>
-                <li class="active"> <a href="/about">About</a></li>
-                <li class="active"> <a href="/services">Services</a></li>
-                <li class="active"> <a href="/posts">Blog</a></li>
+                <li class="active"> <a href=" {{ route('home') }} ">Home</a></li>
+                <li class="active"> <a href=" {{ route('about') }} ">About</a></li>
+                <li class="active"> <a href=" {{ route('services') }} ">Services</a></li>
+                <li class="active"> <a href=" ">Blog</a></li>
             </ul>
         </div>
     </div>

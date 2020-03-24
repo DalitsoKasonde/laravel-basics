@@ -25,4 +25,9 @@ class PagesController extends Controller
         return view('pages.services')->with($data);
     }
 
+    public function posts(){
+        $title = 'Blogs';
+        return view('posts.index')->with('title',$title);
+    }
+
 }
