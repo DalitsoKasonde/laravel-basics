@@ -24,6 +24,7 @@ Route::get('/about', 'PagesController@about')->name('about');
 Route::get('/services', 'PagesController@services')->name('services');
 Route::get('/posts', 'PostsController@index')->name('posts');
 Route::get('/{id}/show', 'PostsController@show')->name('show');
+// Route::get('/create', 'PostsController@create')->name('create');
 // Route::get('user/profile', 'UserProfileController@show')->name('profile');
 
 
