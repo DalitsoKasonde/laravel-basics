@@ -14,7 +14,7 @@
                 <li class="active"> <a href=" {{ route('home') }} ">Home</a></li>
                 <li class="active"> <a href=" {{ route('about') }} ">About</a></li>
                 <li class="active"> <a href=" {{ route('services') }} ">Services</a></li>
-                <li class="active"> <a href=" ">Blog</a></li>
+                <li class="active"> <a href=" {{ route('posts')}} ">Blog</a></li>
             </ul>
         </div>
     </div>

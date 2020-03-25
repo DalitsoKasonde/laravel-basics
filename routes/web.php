@@ -22,10 +22,10 @@
 Route::get('/', 'PagesController@index')->name('home');
 Route::get('/about', 'PagesController@about')->name('about');
 Route::get('/services', 'PagesController@services')->name('services');
-// Route::resource('/posts', 'PostsController@index')->name('posts');
-
+Route::get('/posts', 'PostsController@index')->name('posts');
+Route::get('/{id}/show', 'PostsController@show')->name('show');
 // Route::get('user/profile', 'UserProfileController@show')->name('profile');
 
 
-Route::resource('posts', 'PostsController@index');
+// Route::resource('posts', 'PostsController@index');
 
